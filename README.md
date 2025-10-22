@@ -1,1 +1,1 @@
-# Hosting-Company
+# Hosting-Company-Landing-page
