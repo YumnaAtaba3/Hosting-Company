@@ -1,9 +1,7 @@
  .contact-section {
      position: relative;
-     background-image: url('../assets/contact/Background.svg');
+     background: url('../assets/contact/Background.svg') no-repeat center;
      background-size: cover;
-     background-position: center;
-     background-repeat: no-repeat;
      padding: 120px 0px;
      width: 70%;
      display: flex;
