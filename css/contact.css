@@ -1,0 +1,77 @@
+ .contact-section {
+     position: relative;
+     background-image: url('../assets/contact/Background.svg');
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     padding: 120px 0px;
+     width: 70%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     text-align: center;
+     overflow: visible;
+     z-index: 1;
+ }
+
+ .contact-section::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 50%;
+     transform: translateX(-50%);
+     height: 600px;
+     width: 1100px;
+     background: url('../assets/contact/bgWebsite.svg') no-repeat center top;
+     background-size: contain;
+     z-index: 2;
+     pointer-events: none;
+ }
+
+ @media (max-width: 768px) {
+     .contact-section::before {
+         width: 100%;
+         height: 400px;
+     }
+ }
+
+
+ .contact-section::after {
+     content: "";
+     position: absolute;
+     inset: 0;
+     background: rgba(255, 255, 255, 0);
+     z-index: 3;
+ }
+
+
+ .contact-section .overlay {
+     position: relative;
+     z-index: 4;
+ }
+
+ .contact-section h2 {
+     font-size: 32px;
+     font-weight: 700;
+     color: #000;
+     margin-bottom: 30px;
+ }
+
+ .btn-whatsapp {
+     background-color: #B00000;
+     color: white;
+     border: none;
+     padding: 12px 25px;
+     border-radius: 10px;
+     font-weight: 500;
+     display: inline-flex;
+     align-items: center;
+     gap: 8px;
+     transition: 0.3s;
+     box-shadow: 0 10px 20px #ed12124c;
+ }
+
+ .btn-whatsapp:hover {
+     background-color: #b0000072;
+ }

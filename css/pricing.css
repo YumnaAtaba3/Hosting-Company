@@ -1,0 +1,142 @@
+ .leamon-wares {
+     display: flex;
+     justify-content: center;
+     padding: 40px 0;
+     margin-top: 40px;
+
+ }
+
+ .leamon-wares h2 {
+     font-size: 36px;
+     text-align: center;
+
+ }
+
+ .leamon-wares-details {
+     display: flex;
+     justify-content: center;
+ }
+
+ .leamon-wares-details h4 {
+     font-size: 20px;
+     font-weight: 400;
+     margin-top: 10px;
+     color: black;
+ }
+
+ .discountbadge {
+     display: flex;
+     background-color: #FFE87A;
+     align-items: center;
+     justify-content: center;
+     color: black;
+     font-size: 10px;
+     font-weight: 600;
+     padding: 5px 0px;
+     width: 5rem;
+     border-radius: 10px;
+     margin-top: 5px;
+ }
+
+ .form-check-input {
+     padding: 10px 20px;
+ }
+
+ .form-check-input:checked {
+     background-color: #B00000;
+     border-color: #B00000;
+ }
+
+
+ .form-check-input:focus,
+ .form-check-input:hover {
+     box-shadow: 0 0 0 0.25rem rgba(176, 0, 0, 0.25);
+ }
+ .tapbar .nav-link {
+     font-size: 20px;
+ }
+
+
+ .tapbar .nav-link.active,
+ .tapbar .nav-link:focus {
+     color: #B00000 !important;
+     border-bottom: 3px solid #B00000;
+     box-shadow: none;
+ }
+
+
+
+ .tapbar .nav-link:hover {
+     color: #B00000;
+ }
+
+ .pricing-card {
+     background: #fff;
+     transition: 0.3s;
+ }
+
+ .pricing-card:hover {
+     transform: translateY(-8px);
+     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+ }
+
+ .pricing-card h5 {
+     font-size: 20px;
+     font-weight: 600;
+ }
+
+ .pricing-features {
+
+     text-align: start;
+     margin: 0 auto;
+     max-width: 220px;
+ }
+
+ .pricing-features li {
+     margin-bottom: 6px;
+     color: #222;
+     display: flex;
+     align-items: center;
+ }
+
+ .pricing-features i {
+     color: #000;
+     font-size: 1rem;
+ }
+
+ .tapbar button {
+     width: 75%;
+     max-width: 300px;
+     text-align: center;
+     padding: 10px 0;
+     font-weight: 600;
+     transition: all 0.2s ease;
+ }
+
+
+ .testimonial-card {
+     position: relative;
+     border-radius: 16px;
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+ }
+
+ .testimonial-card:hover {
+     transform: translateY(-5px);
+     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+ }
+
+ .testimonial-card img {
+     height: 100px;
+ }
+
+ .testimonial-card p {
+     font-style: italic;
+     font-size: 0.95rem;
+     line-height: 1.6;
+ }
+
+  @media (max-width: 768px) {
+      .tapbar .nav-link {
+          font-size: 14px;
+      }
+  }

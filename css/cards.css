@@ -1,0 +1,101 @@
+    .cards-section card {
+        background: #fff;
+        text-align: center;
+        padding: 5px 10px;
+        border-radius: 15px;
+        height: 300px;
+        transition: 0.3s;
+    }
+
+    .cards-section card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    }
+        .feature-swiper-section {
+            position: relative;
+            overflow: hidden;
+        }
+    
+        .feature-card {
+            background: #fff;
+            border-radius: 15px;
+            text-align: center;
+            height: 15rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: 0.3s;
+        }
+    
+        .feature-card p {
+            font-size: 12px;
+        }
+    
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+        }
+    
+        .feature-card img {
+            width: 70px;
+            height: 70px;
+            object-fit: contain;
+        }
+    
+        /*  Swiper Arrows */
+        .feature-next,
+        .feature-prev {
+            width: 50px;
+            height: 50px;
+            border-radius: 40%;
+            background: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #B00000;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    
+        .feature-next:hover,
+        .feature-prev:hover {
+            background: #B00000;
+            color: white;
+        }
+    
+    
+    
+        .swiper-button-next.feature-next::after,
+        .swiper-button-prev.feature-prev::after {
+            font-size: 20px;
+            content: '>>';
+            font-weight: bold;
+        }
+    
+        .swiper-button-prev.feature-prev::after {
+            content: '<<';
+        }
+    
+        .swiper-button-next.feature-next::after,
+        .swiper-button-prev.feature-prev::after {
+            font-size: 18px;
+            font-weight: bold;
+        }
+    
+        /* Arrow Positions */
+        .feature-next {
+            right: 0px;
+        }
+    
+        .feature-prev {
+            left: 0px;
+        }
+    
+    
+        @media (max-width: 768px) {
+            .feature-next {
+                right: 5px;
+            }
+    
+            .feature-prev {
+                left: 5px;
+            }
+        }

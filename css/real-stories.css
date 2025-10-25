@@ -1,0 +1,91 @@
+.testimonial-card {
+    text-align: start;
+    border-radius: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.quote-text {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    font-style: italic;
+    color: #555;
+}
+
+.quote-text .quote-mark {
+    font-size: 3rem;
+    color: #2EC5CE;
+    opacity: 0.5;
+    line-height: 1;
+    margin-top: -5px;
+}
+
+.real-stories .quote-bg {
+    position: absolute;
+    top: -30px;
+    left: -60px;
+    width: 90px;
+    z-index: 1;
+}
+
+
+.jpnl-card {
+    height: 100%;
+    padding-left: 40px;
+}
+
+.cli-card {
+    height: 50%;
+   
+}
+
+.lemon-card {
+    height: 100%;
+  
+}
+
+.title-section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+@media (max-width: 992px) {
+
+    .real-stories .col-md-7,
+    .real-stories .col-md-5 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .title-section h2 {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .real-stories .quote-bg {
+        position: absolute;
+        top: -30px;
+        left: -20px;
+        width: 90px;
+        z-index: 1;
+    }
+
+    .cli-card {
+        height: auto;
+       
+    }
+
+    .lemon-card {
+        height: auto;
+    }
+}

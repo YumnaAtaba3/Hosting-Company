@@ -1,0 +1,131 @@
+ .navbar {
+     background-color: white;
+ }
+
+ .navbar-text {
+     text-decoration: underline 4px #B00000;
+     color: black;
+ }
+
+ .nav-link {
+     color: black;
+     font-weight: bold;
+     padding-left: 3rem;
+ }
+
+ .nav-link:hover {
+     color: #B00000;
+ }
+/* Mobile Drawer */
+/* Modern Mobile Drawer */
+.mobile-drawer {
+    position: fixed;
+    top: 0;
+    right: -320px; /* slightly wider */
+    width: 200px;
+    height: 100%;
+    background: #fff;
+    border-radius: 0 0 0 20px; /* rounded top-left */
+    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.2);
+    padding: 50px 25px;
+    z-index: 9999;
+    transition: right 0.4s cubic-bezier(0.77, 0, 0.175, 1);
+    display: flex;
+    flex-direction: column;
+    transform: translateX(0);
+}
+
+/* Drawer active */
+.mobile-drawer.show {
+    right: 0;
+}
+
+/* Close Button */
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 36px;
+    align-self: flex-end;
+    cursor: pointer;
+    color: #B00000;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.close-btn:hover {
+    transform: rotate(90deg) scale(1.2);
+    color: #ff4d4d;
+}
+
+/* Drawer Links */
+.mobile-drawer ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mobile-drawer ul li a {
+    color: #333;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.mobile-drawer ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: #B00000;
+    transition: width 0.3s;
+    border-radius: 2px;
+}
+
+.mobile-drawer ul li a:hover {
+    color: #B00000;
+}
+
+.mobile-drawer ul li a:hover::after {
+    width: 100%;
+}
+
+/* Drawer Account Info */
+.mobile-drawer .account-info {
+    margin-top: auto;
+    padding-top: 25px;
+    border-top: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.mobile-drawer .account-info div,
+.mobile-drawer .account-info p {
+    font-weight: 600;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Optional: Add smooth icon animation for drawer open */
+.drawer-open-icon {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 28px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    z-index: 10000;
+}
+
+.drawer-open-icon:hover {
+    transform: rotate(90deg) scale(1.1);
+    color: #B00000;
+}
