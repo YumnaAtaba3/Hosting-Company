@@ -3,6 +3,7 @@
 A **responsive landing page** for a hosting company, built with **HTML, CSS, Bootstrap 5**, and **Swiper.js**. This project features a modern design, mobile-friendly navigation, and interactive elements like sliders and pricing tabs.
 
 ---
+Deploy Link: [Hosting Landing Page](https://hosting-company-1afb.vercel.app/)
 
 ## Features
 
