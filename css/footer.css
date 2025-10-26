@@ -18,3 +18,16 @@
  .list-footer li a:hover {
      text-decoration: underline;
  }
+
+   @media (max-width: 767.98px) {
+    .footer .row>div:first-child {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    
+        .footer .row>div:not(:first-child) {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+    }
+   

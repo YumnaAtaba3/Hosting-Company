@@ -30,10 +30,10 @@
      align-items: center;
      justify-content: center;
      color: black;
-     font-size: 10px;
+     font-size: 12px;
      font-weight: 600;
-     padding: 5px 0px;
-     width: 5rem;
+     padding: 8px 0px;
+     width: 6rem;
      border-radius: 10px;
      margin-top: 5px;
  }

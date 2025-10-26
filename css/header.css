@@ -1,20 +1,29 @@
+
  .navbar {
      background-color: white;
+
  }
 
- .navbar-text {
+ .navbar-text{
+    color: black;
+ }
+ .navbar-text:hover {
      text-decoration: underline 4px #B00000;
-     color: black;
+ 
  }
 
+ .desktop-menu{
+     margin-left: 270px;
+ }
  .nav-link {
      color: black;
      font-weight: bold;
-     padding-left: 3rem;
+   
  }
 
  .nav-link:hover {
-     color: #B00000;
+    text-decoration: underline 4px #B00000;
+        color: black;
  }
 /* Mobile Drawer */
 .mobile-drawer {
