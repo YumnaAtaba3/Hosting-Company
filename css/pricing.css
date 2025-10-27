@@ -57,13 +57,13 @@
  }
 
 
- .tapbar .nav-link.active,
- .tapbar .nav-link:focus {
-     color: #B00000 !important;
-     border-bottom: 3px solid #B00000;
-     box-shadow: none;
- }
-
+.tapbar .nav-link.active,
+.tapbar .nav-link:focus {
+    color: #B00000 !important;
+    border-bottom: 3px solid #B00000 !important;
+    box-shadow: none !important;
+  
+}
 
 
  .tapbar .nav-link:hover {

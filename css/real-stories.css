@@ -6,12 +6,10 @@
     flex-direction: column;
 }
 
-
 .testimonial-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
 }
-
 
 .quote-text {
     display: flex;
@@ -29,14 +27,46 @@
     margin-top: -5px;
 }
 
+/* Quote image */
 .real-stories .quote-bg {
     position: absolute;
     top: -30px;
-    left: -60px;
     width: 90px;
     z-index: 1;
 }
 
+
+html[dir="ltr"] .real-stories .quote-bg {
+    left: -60px;
+    right: auto;
+}
+
+
+html[dir="rtl"] .real-stories .quote-bg {
+    left: auto;
+    right: -60px;
+}
+
+
+html[dir="ltr"] .quote-text {
+    flex-direction: row;
+    text-align: left;
+}
+
+html[dir="rtl"] .quote-text {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+html[dir="ltr"] .quote-text .quote-mark {
+    margin-left: 0;
+    margin-right: 0.5rem;
+}
+
+html[dir="rtl"] .quote-text .quote-mark {
+    margin-left: 0.5rem;
+    margin-right: 0;
+}
 
 .jpnl-card {
     height: 100%;
@@ -45,19 +75,16 @@
 
 .cli-card {
     height: 50%;
-   
 }
 
 .lemon-card {
     height: 100%;
-  
 }
 
 .title-section h2 {
     font-size: 2rem;
     font-weight: bold;
 }
-
 
 @media (max-width: 992px) {
 
@@ -72,17 +99,19 @@
         font-weight: bold;
     }
 
-    .real-stories .quote-bg {
-        position: absolute;
-        top: -30px;
+
+    html[dir="ltr"] .real-stories .quote-bg {
         left: -20px;
-        width: 90px;
-        z-index: 1;
+        right: auto;
+    }
+
+    html[dir="rtl"] .real-stories .quote-bg {
+        left: auto;
+        right: -20px;
     }
 
     .cli-card {
         height: auto;
-       
     }
 
     .lemon-card {

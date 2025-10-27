@@ -1,11 +1,20 @@
-
- .navbar {
-     background-color: white;
-
- }
+.navbar {
+    background-color:white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
 
  .navbar-text{
     color: black;
+ }
+
+ .navbar-text.active {
+     
+     text-decoration: underline 4px #B00000;
+     text-underline-offset: 4px;
  }
  .navbar-text:hover {
      text-decoration: underline 4px #B00000;
@@ -19,6 +28,18 @@
      color: black;
      font-weight: bold;
    
+ }
+
+ .lang-btn{
+    border: none;
+    outline: none;
+    color :#B00000;
+    background-color: white;
+ }
+ .lang-btn:hover, .lang-btn:focus {
+
+     color:white ;
+     background-color: #B00000;
  }
 
  .nav-link:hover {

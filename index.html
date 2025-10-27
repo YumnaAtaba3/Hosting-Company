@@ -4,550 +4,514 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hosting Company</title>
+    <title data-i18n="header.title">Hosting Company</title>
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <!-- RTL -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet"
+        id="bootstrap-rtl" disabled>
 
-        <!-- Swiper CSS -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- Custom CSS -->
-     <link rel="stylesheet" href="css/cards.css">
-     <link rel="stylesheet" href="css/cloud.css">
-     <link rel="stylesheet" href="css/contact.css">
-     <link rel="stylesheet" href="css/footer.css">
-     <link rel="stylesheet" href="css/header.css">
-     <link rel="stylesheet" href="css/hero.css">
-     <link rel="stylesheet" href="css/main.css">
-     <link rel="stylesheet" href="css/pricing.css">
-     <link rel="stylesheet" href="css/real-stories.css">
-
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/cloud.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/pricing.css">
+    <link rel="stylesheet" href="css/real-stories.css">
 </head>
 
 <body>
-<header class="container">
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid d-flex justify-content-between align-items-center">
+    <header class="container">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid d-flex justify-content-between align-items-center">
 
-            <!-- Logo , Our Services -->
-            <div class="d-flex align-items-center gap-3">
-                <a class="navbar-brand" href="#"><img src="assets/header/logo.svg" alt="Company Logo"></a>
-                <span class="navbar-text fw-bold ">Our Services</span>
-            </div>
+                <div class="d-flex align-items-center gap-3">
+                    <a class="navbar-brand" href="#"><img src="assets/header/logo.svg" alt="Company Logo"></a>
+                    <span class="navbar-text fw-bold active" data-i18n="header.ourServices">Our Services</span>
+              
+                <button id="langToggle" class="lang-btn btn btn-outline">
+                    EN
+                </button>
 
-            <!-- Desktop Menu -->
-            <ul class=" desktop-menu navbar-nav d-none d-lg-flex me-auto mb-2 mb-lg-0 ">
-                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Blog & News</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-            </ul>
+                </div>
 
-            <!-- Desktop Account -->
-            <div class="d-none d-lg-flex align-items-center gap-2">
-                <div class="fw-bold">Account</div>
-                <div>|</div>
-                <img src="assets/header/phone.svg" alt="phone icon">
-                <p class="mb-0 fw-bold">+2349067322844</p>
-            </div>
-
-            <!-- Mobile Drawer Button -->
-        <button class="btn d-lg-none" id="drawerBtn">
-            <i class="bi bi-list fs-2 text-dark"></i>
-        </button>
-
-            <!-- Mobile Drawer -->
-            <div id="mobileDrawer" class="mobile-drawer">
-                <button class="close-btn" id="closeDrawer">&times;</button>
-                <ul class="list-unstyled mt-4">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Blog & News</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul class="desktop-menu navbar-nav d-none d-lg-flex me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#" data-i18n="header.about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-i18n="header.blog">Blog & News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-i18n="header.contact">Contact</a></li>
                 </ul>
-                <div class="mt-3">
-                    <div class="fw-bold">Account</div>
-                    <p class="mb-0 fw-bold">+2349067322844</p>
+
+                <div class="d-none d-lg-flex align-items-center gap-2">
+                    <div class="fw-bold" data-i18n="header.account">Account</div>
+                    <div>|</div>
+                    <img src="assets/header/phone.svg" alt="phone icon">
+                    <p class="mb-0 fw-bold" data-i18n="header.phone">+2349067322844</p>
+                </div>
+
+                <button class="btn d-lg-none" id="drawerBtn">
+                    <i class="bi bi-list fs-2 text-dark"></i>
+                </button>
+
+                <div id="mobileDrawer" class="mobile-drawer">
+                    <button class="close-btn" id="closeDrawer">&times;</button>
+                    <ul class="list-unstyled mt-4">
+                        <li><a href="#" data-i18n="header.about">About</a></li>
+                        <li><a href="#" data-i18n="header.blog">Blog & News</a></li>
+                        <li><a href="#" data-i18n="header.contact">Contact</a></li>
+                    </ul>
+                    <div class="mt-3">
+                        <div class="fw-bold" data-i18n="header.account">Account</div>
+                        <p class="mb-0 fw-bold" data-i18n="header.phone">+2349067322844</p>
+                    </div>
                 </div>
             </div>
-
-
-        </div>
-    </nav>
-</header>
+        </nav>
+    </header>
 
     <!-- Hero Section -->
     <section class="hero-section container mt-5">
-        <div class="swiper heroSwiper">
+        <div class="swiper heroSwiper" >
             <div class="swiper-wrapper">
-    
-                <!-- Slide 1 -->
                 <div class="swiper-slide hero-slide d-flex flex-wrap align-items-center justify-content-between">
                     <div class="hero-text">
-                        <h1>Premium Web Hosting for Your Website</h1>
-                        <p>Blazing fast web hosting for individuals and businesses of all sizes backed by 24×7×365 support.
-                        </p>
+                        <h1 data-i18n="hero.slide1.title">Premium Web Hosting for Your Website</h1>
+                        <p data-i18n="hero.slide1.desc">Blazing fast web hosting for individuals and businesses of all
+                            sizes backed by 24×7×365 support.</p>
                         <div class="d-flex align-items-center gap-4">
-                            <button class="btn-create-account">Create an Account</button>
-                            <button class="btn-choose-plane">Choose your plan</button>
+                            <button class="btn-create-account" data-i18n="hero.slide1.btn1">Create an Account</button>
+                            <button class="btn-choose-plane" data-i18n="hero.slide1.btn2">Choose your plan</button>
                         </div>
                     </div>
-                    <div class="hero-img">
-                        <img src="assets/hero/hero-Image.svg" alt="Hero 1">
-                    </div>
+                    <div class="hero-img"><img src="assets/hero/hero-Image.svg" alt="Hero 1"></div>
                 </div>
-    
-                <!-- Slide 2 -->
                 <div class="swiper-slide hero-slide d-flex flex-wrap align-items-center justify-content-between">
                     <div class="hero-text">
-                        <h1>Fast, Secure, and Reliable Hosting</h1>
-                        <p>Host your website with confidence using cutting-edge technology and global data centers.</p>
+                        <h1 data-i18n="hero.slide2.title">Fast, Secure, and Reliable Hosting</h1>
+                        <p data-i18n="hero.slide2.desc">Host your website with confidence using cutting-edge technology
+                            and global data centers.</p>
                         <div class="d-flex align-items-center gap-4">
-                            <button class="btn-create-account">Get Started</button>
-                            <button class="btn-choose-plane">Learn More</button>
+                            <button class="btn-create-account" data-i18n="hero.slide2.btn1">Get Started</button>
+                            <button class="btn-choose-plane" data-i18n="hero.slide2.btn2">Learn More</button>
                         </div>
                     </div>
-                    <div class="hero-img">
-                        <img src="assets/hero/hero-Image.svg" alt="Hero 2">
-                    </div>
+                    <div class="hero-img"><img src="assets/hero/hero-Image.svg" alt="Hero 2"></div>
                 </div>
-    
-                <!-- Slide 3 -->
                 <div class="swiper-slide hero-slide d-flex flex-wrap align-items-center justify-content-between">
                     <div class="hero-text">
-                        <h1>Powerful Hosting for Growing Businesses</h1>
-                        <p>Scale your online presence easily with our high-performance hosting solutions.</p>
+                        <h1 data-i18n="hero.slide3.title">Powerful Hosting for Growing Businesses</h1>
+                        <p data-i18n="hero.slide3.desc">Scale your online presence easily with our high-performance
+                            hosting solutions.</p>
                         <div class="d-flex align-items-center gap-4">
-                            <button class="btn-create-account">Start Now</button>
-                            <button class="btn-choose-plane">View Plans</button>
+                            <button class="btn-create-account" data-i18n="hero.slide3.btn1">Start Now</button>
+                            <button class="btn-choose-plane" data-i18n="hero.slide3.btn2">View Plans</button>
                         </div>
                     </div>
-                    <div class="hero-img">
-                        <img src="assets/hero/hero-Image.svg" alt="Hero 3">
-                    </div>
+                    <div class="hero-img"><img src="assets/hero/hero-Image.svg" alt="Hero 3"></div>
                 </div>
-    
             </div>
-    
-          
+            <div class="swiper-pagination"></div>
         </div>
-    <!--  pagination dots -->
-    <div class="swiper-pagination"></div>
     </section>
 
-
-    <!-- True Cloud Web Hosting -->
+    <!-- Cloud Section -->
     <section class="cloud-section py-5 container">
         <div class="row justify-content-between">
             <div class="col-md-5">
-                <h2 class="text-bold">True Cloud Web Hosting</h2>
-                <p>True Cloud Web Hosting All of the hosting packages we offer are deployed instantly on our SSD powered cloud. We don’t
-                use dedicated servers that operate on single pieces of hardware. Our entire infrastructure is built to be reliable,
-                secure, and scalable.</p>
+                <h2 data-i18n="cloud.title">True Cloud Web Hosting</h2>
+                <p data-i18n="cloud.desc">All of the hosting packages we offer are deployed instantly on our SSD powered
+                    cloud. We don’t use dedicated servers that operate on single pieces of hardware. Our entire
+                    infrastructure is built to be reliable, secure, and scalable.</p>
             </div>
-        <div class="col-md-6">
-            <div class=" cloud-company row justify-content-between mt-4">
-                <div class="col-6 col-md-3 mb-3"><img src="assets/cloud/cPanel_orange_RGB 1.svg" alt="cPanel" class="img-fluid">
+            <div class="col-md-6">
+                <div class="cloud-company row justify-content-between mt-4">
+                    <div class="col-6 col-md-3 mb-3"><img src="assets/cloud/cPanel_orange_RGB 1.svg" alt="cPanel"
+                            class="img-fluid"></div>
+                    <div class="col-6 col-md-3 mb-3"><img src="assets/cloud/secured-by-Imunify360-green 1.svg"
+                            alt="Imunify" class="img-fluid"></div>
+                    <div class="col-6 col-md-3 mb-3"><img src="assets/cloud/litespeed-logo 1.svg" alt="LiteSpeed"
+                            class="img-fluid"></div>
                 </div>
-                <div class="col-6 col-md-3 mb-3"><img src="assets/cloud/secured-by-Imunify360-green 1.svg" alt="Imunify"
-                        class="img-fluid"></div>
-                <div class="col-6 col-md-3 mb-3"><img src="assets/cloud/litespeed-logo 1.svg" alt="LiteSpeed" class="img-fluid">
+                <div class="cloud-company row justify-content-between mt-4">
+                    <div class="col-6 col-md-3 mb-3"><img src="assets/cloud/soft.svg" alt="Softaculous"
+                            class="img-fluid"></div>
+                    <div class="col-6 col-md-3 mb-3"><img src="assets/cloud/word-press.svg" alt="WordPress"
+                            class="img-fluid"></div>
+                    <div class="col-6 col-md-3 mb-3"><img src="assets/cloud/cloudFlare.svg" alt="Cloudflare"
+                            class="img-fluid"></div>
                 </div>
             </div>
-            <div class=" cloud-company row justify-content-between mt-4">
-                <div class="col-6 col-md-3 mb-3"><img src="assets/cloud/soft.svg" alt="Softaculous" class="img-fluid"></div>
-                <div class="col-6 col-md-3 mb-3"><img src="assets/cloud/word-press.svg" alt="WordPress" class="img-fluid"></div>
-                <div class="col-6 col-md-3 mb-3"><img src="assets/cloud/cloudFlare.svg" alt="Cloudflare" class="img-fluid">
-                </div>
-            </div>
-        </div>
-
         </div>
     </section>
 
-<!-- Feature Cards Swiper -->
-<section class="feature-swiper-section py-5 container text-center position-relative">
-    <div class="swiper featureSwiper">
-        <div class="swiper-wrapper">
-
-            <!-- Card 1 -->
-            <div class="swiper-slide feature-card p-4">
-                <img src="assets/features/clock.svg" alt="uptime" class="mb-3">
-                <h6 class="fw-bold">99.9% Uptime</h6>
-                <p>We Keep Your Web build Online 24x7x365.
-                Downtime not only costs you lost visitors but also damages your reputation and search engine rankings.</p>
+    <!-- Feature Cards Swiper -->
+    <section class="feature-swiper-section py-5 container text-center position-relative">
+        <div class="swiper featureSwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide feature-card p-4">
+                    <img src="assets/features/clock.svg" alt="uptime" class="mb-3">
+                    <h6 class="fw-bold" data-i18n="features.card1.title">99.9% Uptime</h6>
+                    <p data-i18n="features.card1.desc">We Keep Your Web build Online 24x7x365. Downtime not only costs
+                        you lost visitors but also damages your reputation and search engine rankings.</p>
+                </div>
+                <div class="swiper-slide feature-card p-4">
+                    <img src="assets/features/setting-cloud.svg" alt="blazing" class="mb-3">
+                    <h6 class="fw-bold" data-i18n="features.card2.title">Blazing Fast Hosting</h6>
+                    <p data-i18n="features.card2.desc">We Keep Your Web build Online 24x7x365. Downtime not only costs
+                        you lost visitors but also damages your reputation and search engine rankings.</p>
+                </div>
+                <div class="swiper-slide feature-card p-4">
+                    <img src="assets/features/ssl.svg" alt="ssl" class="mb-3">
+                    <h6 class="fw-bold" data-i18n="features.card3.title">Free SSL Certificates</h6>
+                    <p data-i18n="features.card3.desc">We Keep Your Web build Online 24x7x365. Downtime not only costs
+                        you lost visitors but also damages your reputation and search engine rankings.</p>
+                </div>
+                <div class="swiper-slide feature-card p-4">
+                    <img src="assets/features/speaker.svg" alt="support" class="mb-3">
+                    <h6 class="fw-bold" data-i18n="features.card4.title">24×7 Friendly Support</h6>
+                    <p data-i18n="features.card4.desc">We Keep Your Web build Online 24x7x365. Downtime not only costs
+                        you lost visitors but also damages your reputation and search engine rankings.</p>
+                </div>
+                <div class="swiper-slide feature-card p-4">
+                    <img src="assets/features/setting-cloud.svg" alt="rocket" class="mb-3">
+                    <h6 class="fw-bold" data-i18n="features.card5.title">Instant Setup</h6>
+                    <p data-i18n="features.card5.desc">Your hosting account is ready in seconds, not hours.</p>
+                </div>
             </div>
-
-            <!-- Card 2 -->
-            <div class="swiper-slide feature-card p-4">
-                <img src="assets/features/setting-cloud.svg" alt="blazing" class="mb-3">
-                <h6 class="fw-bold">Blazing Fast Hosting</h6>
-                <p>We Keep Your Web build Online 24x7x365.
-                Downtime not only costs you lost visitors but also damages your reputation and search engine rankings.</p>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="swiper-slide feature-card p-4">
-                <img src="assets/features/ssl.svg" alt="ssl" class="mb-3">
-                <h6 class="fw-bold">Free SSL Certificates</h6>
-                <p>We Keep Your Web build Online 24x7x365.
-                Downtime not only costs you lost visitors but also damages your reputation and search engine rankings.</p>
-            </div>
-
-            <!-- Card 4 -->
-            <div class="swiper-slide feature-card p-4">
-                <img src="assets/features/speaker.svg" alt="support" class="mb-3">
-                <h6 class="fw-bold">24×7 Friendly Support</h6>
-                <p>We Keep Your Web build Online 24x7x365.
-                Downtime not only costs you lost visitors but also damages your reputation and search engine rankings.</p>
-            </div>
-
-            <!-- Card 5 -->
-            <div class="swiper-slide feature-card p-4">
-                <img src="assets/features/setting-cloud.svg" alt="rocket" class="mb-3">
-                <h6 class="fw-bold">Instant Setup</h6>
-                <p>Your hosting account is ready in seconds, not hours.</p>
-            </div>
+            <div class="swiper-button-next feature-next"></div>
+            <div class="swiper-button-prev feature-prev"></div>
         </div>
-
-        <!-- Arrows -->
-        <div class="swiper-button-next feature-next"></div>
-        <div class="swiper-button-prev feature-prev"></div>
-    </div>
-</section>
+    </section>
+<section>
     <!-- Pricing Section -->
-    <section>
-        <div class="leamon-wares">
-            <h2 class="fw-bold text-center mt-4">Ready to get started with Lemon Wares?</h2>
-        </div>
-        <div class="leamon-wares-details">
-            <h4>Choose the package that suits you</h4>
-        </div>
-
-        <div class="d-flex align-items-center justify-content-center gap-3 mt-4">
-            <span>Monthly</span>
-<div class="form-check form-switch form-check-reverse">
-    <input class="form-check-input" type="checkbox" id="switch">
+   <div class="leamon-wares">
+    <h2 class="fw-bold text-center mt-4" data-i18n="lemon.title">Ready to get started with Lemon Wares?</h2>
 </div>
-            <span>Yearly</span>
-            <div class="discountbadge">20% discount</div>
-        </div>
-    </section>
+<div class="leamon-wares-details">
+    <h4 data-i18n="lemon.subtitle">Choose the package that suits you</h4>
+</div>
 
-<!-- tap bar -->
+<div class="d-flex align-items-center justify-content-center gap-3 mt-4">
+    <span data-i18n="lemon.monthly">Monthly</span>
+    <div class="form-check form-switch form-check-reverse">
+        <input class="form-check-input" type="checkbox" id="switch">
+    </div>
+    <span data-i18n="lemon.yearly">Yearly</span>
+    <div class="discountbadge" data-i18n="lemon.discount">20% discount</div>
+</div>
+<!-- Pricing Tabs -->
 <div class="tapbar d-flex justify-content-center gap-3 mt-5">
-    <button id="basic-tab" class="nav-link active">Basic</button>
-    <button id="premium-tab" class="nav-link">Premium</button>
+    <button id="basic-tab" class="nav-link active" data-i18n="pricing.tabs.basic">Basic</button>
+    <button id="premium-tab" class="nav-link" data-i18n="pricing.tabs.premium">Premium</button>
 </div>
 
-
-<!-- Pricing Cards Section -->
-<section class="container py-5">
-    <div class="row justify-content-center text-start">
-        <!--  BASIC PLANS -->
-        <div id="basic-plans" class="plan-group">
-            <div class="row justify-content-center g-4">
-                <!-- Starter -->
-                <div class="col-md-3">
-                    <div class="pricing-card shadow-sm p-4 rounded-4 h-100">
-                        <h5 class="fw-bold mb-3">Starter</h5>
-                        <p class="text-muted small">with all your customers via all conversation channels in one central
-                            dashboard</p>
-                        <h2 class="fw-bold my-3">$2.80<span class="fs-6 fw-normal"> /month</span></h2>
-                        <button class="btn btn-outline-dark w-100 rounded-3 mb-4">Choose This Plan</button>
-                        <ul class="pricing-features list-unstyled small">
-                            <li><i class="bi bi-check me-2"></i>2GB SSD</li>
-                            <li><i class="bi bi-check me-2"></i>10GB Bandwidth</li>
-                            <li><i class="bi bi-check me-2"></i>15 Email Accounts</li>
-                            <li><i class="bi bi-check me-2"></i>Unlimited Database</li>
-                            <li><i class="bi bi-check me-2"></i>1 Parked Domain</li>
-                            <li><i class="bi bi-check me-2"></i>2 Websites</li>
-                            <li><i class="bi bi-check me-2"></i>Free SSL</li>
-                            <li><i class="bi bi-check me-2"></i>Softaculous</li>
-                        </ul>
+    <!-- Pricing Cards Section -->
+    <section class="container py-5">
+        <div class="row justify-content-center text-start">
+            <!-- Basic Plans -->
+            <div id="basic-plans" class="plan-group">
+                <div class="row justify-content-center g-4">
+                    <!-- Starter -->
+                    <div class="col-md-3">
+                        <div class="pricing-card shadow-sm p-4 rounded-4 h-100">
+                            <h5 class="fw-bold mb-3" data-i18n="pricing.basic.starter.title">Starter</h5>
+                            <p class="text-muted small" data-i18n="pricing.basic.starter.desc">with all your customers
+                                via all conversation channels in one central dashboard</p>
+                            <h2 class="fw-bold my-3">$2.80<span class="fs-6 fw-normal" data-i18n="pricing.perMonth">
+                                    /month</span></h2>
+                            <button class="btn btn-outline-dark w-100 rounded-3 mb-4"
+                                data-i18n="pricing.choosePlan">Choose This Plan</button>
+                            <ul class="pricing-features list-unstyled small">
+                                <li><i class="bi bi-check me-2"></i><span
+                                        data-i18n="pricing.basic.starter.features.ssd">2GB SSD</span></li>
+                                <li><i class="bi bi-check me-2"></i><span
+                                        data-i18n="pricing.basic.starter.features.bandwidth">10GB Bandwidth</span></li>
+                                <li><i class="bi bi-check me-2"></i><span
+                                        data-i18n="pricing.basic.starter.features.email">15 Email Accounts</span></li>
+                                <li><i class="bi bi-check me-2"></i><span
+                                        data-i18n="pricing.basic.starter.features.database">Unlimited Database</span>
+                                </li>
+                                <li><i class="bi bi-check me-2"></i><span
+                                        data-i18n="pricing.basic.starter.features.parkedDomain">1 Parked Domain</span>
+                                </li>
+                                <li><i class="bi bi-check me-2"></i><span
+                                        data-i18n="pricing.basic.starter.features.websites">2 Websites</span></li>
+                                <li><i class="bi bi-check me-2"></i><span
+                                        data-i18n="pricing.basic.starter.features.ssl">Free SSL</span></li>
+                                <li><i class="bi bi-check me-2"></i><span
+                                        data-i18n="pricing.basic.starter.features.softaculous">Softaculous</span></li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
 
                 <!-- Standard -->
                 <div class="col-md-3">
                     <div class="pricing-card shadow-sm p-4 rounded-4 h-100">
-                        <h5 class="fw-bold mb-3">Standard</h5>
-                        <p class="text-muted small">Centralized dashboard for all your customers</p>
-                        <h2 class="fw-bold my-3">$4.20<span class="fs-6 fw-normal"> /month</span></h2>
-                        <button class="btn btn-outline-dark w-100 rounded-3 mb-4">Choose This Plan</button>
+                        <h5 class="fw-bold mb-3" data-i18n="pricing.basic.standard.title">Standard</h5>
+                        <p class="text-muted small" data-i18n="pricing.basic.standard.desc">Centralized dashboard for all your customers
+                        </p>
+                        <h2 class="fw-bold my-3">$4.20<span class="fs-6 fw-normal" data-i18n="pricing.perMonth"> /month</span></h2>
+                        <button class="btn btn-outline-dark w-100 rounded-3 mb-4" data-i18n="pricing.choosePlan">Choose This
+                            Plan</button>
                         <ul class="pricing-features list-unstyled small">
-                            <li><i class="bi bi-check me-2"></i>4GB SSD</li>
-                            <li><i class="bi bi-check me-2"></i>20GB Bandwidth</li>
-                            <li><i class="bi bi-check me-2"></i>25 Email Accounts</li>
-                            <li><i class="bi bi-check me-2"></i>Unlimited Database</li>
-                            <li><i class="bi bi-check me-2"></i>4 Subdomains</li>
-                            <li><i class="bi bi-check me-2"></i>Free SSL</li>
-                            <li><i class="bi bi-check me-2"></i>Softaculous</li>
+                            <li><i class="bi bi-check me-2"></i><span data-i18n="pricing.basic.standard.features.ssd">4GB SSD</span>
+                            </li>
+                            <li><i class="bi bi-check me-2"></i><span data-i18n="pricing.basic.standard.features.bandwidth">20GB
+                                    Bandwidth</span></li>
+                            <li><i class="bi bi-check me-2"></i><span data-i18n="pricing.basic.standard.features.email">25 Email
+                                    Accounts</span></li>
+                            <li><i class="bi bi-check me-2"></i><span data-i18n="pricing.basic.standard.features.database">Unlimited
+                                    Database</span></li>
+                            <li><i class="bi bi-check me-2"></i><span data-i18n="pricing.basic.standard.features.subdomains">4
+                                    Subdomains</span></li>
+                            <li><i class="bi bi-check me-2"></i><span data-i18n="pricing.basic.standard.features.ssl">Free SSL</span>
+                            </li>
+                            <li><i class="bi bi-check me-2"></i><span
+                                    data-i18n="pricing.basic.standard.features.softaculous">Softaculous</span></li>
                         </ul>
                     </div>
                 </div>
-
+                
                 <!-- Supreme -->
                 <div class="col-md-3">
                     <div class="pricing-card shadow-sm p-4 rounded-4 h-100">
-                        <h5 class="fw-bold mb-3">Supreme</h5>
-                        <p class="text-muted small">Perfect for small businesses and professionals</p>
-                        <h2 class="fw-bold my-3">$7.00<span class="fs-6 fw-normal"> /month</span></h2>
-                        <button class="btn btn-outline-dark w-100 rounded-3 mb-4">Choose This Plan</button>
+                        <h5 class="fw-bold mb-3" data-i18n="pricing.basic.supreme.title">Supreme</h5>
+                        <p class="text-muted small" data-i18n="pricing.basic.supreme.desc">Perfect for small businesses and
+                            professionals</p>
+                        <h2 class="fw-bold my-3">$7.00<span class="fs-6 fw-normal" data-i18n="pricing.perMonth"> /month</span></h2>
+                        <button class="btn btn-outline-dark w-100 rounded-3 mb-4" data-i18n="pricing.choosePlan">Choose This
+                            Plan</button>
                         <ul class="pricing-features list-unstyled small">
-                            <li><i class="bi bi-check me-2"></i>10GB SSD</li>
-                            <li><i class="bi bi-check me-2"></i>Unlimited Bandwidth</li>
-                            <li><i class="bi bi-check me-2"></i>50 Email Accounts</li>
-                            <li><i class="bi bi-check me-2"></i>Free SSL</li>
-                            <li><i class="bi bi-check me-2"></i>Softaculous</li>
+                            <li><i class="bi bi-check me-2"></i><span data-i18n="pricing.basic.supreme.features.ssd">10GB SSD</span>
+                            </li>
+                            <li><i class="bi bi-check me-2"></i><span data-i18n="pricing.basic.supreme.features.bandwidth">Unlimited
+                                    Bandwidth</span></li>
+                            <li><i class="bi bi-check me-2"></i><span data-i18n="pricing.basic.supreme.features.email">50 Email
+                                    Accounts</span></li>
+                            <li><i class="bi bi-check me-2"></i><span data-i18n="pricing.basic.supreme.features.ssl">Free SSL</span>
+                            </li>
+                            <li><i class="bi bi-check me-2"></i><span
+                                    data-i18n="pricing.basic.supreme.features.softaculous">Softaculous</span></li>
                         </ul>
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <!--  PREMIUM PLANS (Hidden ) -->
-        <div id="premium-plans" class="plan-group d-none">
-            <div class="row  justify-content-center g-4">
-                <!-- Pro -->
-                <div class="col-md-3">
-                    <div class="pricing-card shadow-sm p-4 rounded-4 h-100 border-danger">
-                        <h5 class="fw-bold mb-3">Pro</h5>
-                        <p class="text-muted small">Advanced performance for power users</p>
-                        <h2 class="fw-bold my-3">$10.00<span class="fs-6 fw-normal"> /month</span></h2>
-                        <button class="btn btn-outline-dark w-100 rounded-3 mb-4">Choose This Plan</button>
-                        <ul class="pricing-features list-unstyled small">
-                            <li><i class="bi bi-check me-2"></i>20GB SSD</li>
-                            <li><i class="bi bi-check me-2"></i>Unlimited Bandwidth</li>
-                            <li><i class="bi bi-check me-2"></i>100 Email Accounts</li>
-                            <li><i class="bi bi-check me-2"></i>Free SSL & CDN</li>
-                            <li><i class="bi bi-check me-2"></i>Priority Support</li>
-                        </ul>
+                </div>
+                </div>
+                
+                <!-- Premium Plans -->
+                <div id="premium-plans" class="plan-group d-none">
+                    <div class="row justify-content-center g-4">
+                        <!-- Pro -->
+                        <div class="col-md-3">
+                            <div class="pricing-card shadow-sm p-4 rounded-4 h-100 border-danger">
+                                <h5 class="fw-bold mb-3" data-i18n="pricing.premium.pro.title">Pro</h5>
+                                <p class="text-muted small" data-i18n="pricing.premium.pro.desc">Advanced performance for power users
+                                </p>
+                                <h2 class="fw-bold my-3">$10.00<span class="fs-6 fw-normal" data-i18n="pricing.perMonth"> /month</span>
+                                </h2>
+                                <button class="btn btn-outline-dark w-100 rounded-3 mb-4" data-i18n="pricing.choosePlan">Choose This
+                                    Plan</button>
+                                <ul class="pricing-features list-unstyled small">
+                                    <li><i class="bi bi-check me-2"></i><span data-i18n="pricing.premium.pro.features.ssd">20GB
+                                            SSD</span></li>
+                                    <li><i class="bi bi-check me-2"></i><span
+                                            data-i18n="pricing.premium.pro.features.bandwidth">Unlimited Bandwidth</span></li>
+                                    <li><i class="bi bi-check me-2"></i><span data-i18n="pricing.premium.pro.features.email">100 Email
+                                            Accounts</span></li>
+                                    <li><i class="bi bi-check me-2"></i><span data-i18n="pricing.premium.pro.features.ssl">Free SSL &
+                                            CDN</span></li>
+                                    <li><i class="bi bi-check me-2"></i><span data-i18n="pricing.premium.pro.features.support">Priority
+                                            Support</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                
+                        <!-- Business -->
+                        <div class="col-md-3">
+                            <div class="pricing-card shadow-sm p-4 rounded-4 h-100 border-danger">
+                                <h5 class="fw-bold mb-3" data-i18n="pricing.premium.business.title">Business</h5>
+                                <p class="text-muted small" data-i18n="pricing.premium.business.desc">Perfect for growing companies</p>
+                                <h2 class="fw-bold my-3">$15.00<span class="fs-6 fw-normal" data-i18n="pricing.perMonth"> /month</span>
+                                </h2>
+                                <button class="btn btn-outline-dark w-100 rounded-3 mb-4" data-i18n="pricing.choosePlan">Choose This
+                                    Plan</button>
+                                <ul class="pricing-features list-unstyled small">
+                                    <li><i class="bi bi-check me-2"></i><span data-i18n="pricing.premium.business.features.ssd">50GB
+                                            SSD</span></li>
+                                    <li><i class="bi bi-check me-2"></i><span
+                                            data-i18n="pricing.premium.business.features.bandwidth">Unlimited Bandwidth</span></li>
+                                    <li><i class="bi bi-check me-2"></i><span
+                                            data-i18n="pricing.premium.business.features.email">Unlimited Emails</span></li>
+                                    <li><i class="bi bi-check me-2"></i><span data-i18n="pricing.premium.business.features.ssl">Free SSL
+                                            & Backups</span></li>
+                                    <li><i class="bi bi-check me-2"></i><span data-i18n="pricing.premium.business.features.support">24/7
+                                            Support</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                
+                        <!-- Enterprise -->
+                        <div class="col-md-3">
+                            <div class="pricing-card shadow-sm p-4 rounded-4 h-100 border-danger">
+                                <h5 class="fw-bold mb-3" data-i18n="pricing.premium.enterprise.title">Enterprise</h5>
+                                <p class="text-muted small" data-i18n="pricing.premium.enterprise.desc">Full performance for large-scale
+                                    businesses</p>
+                                <h2 class="fw-bold my-3">$25.00<span class="fs-6 fw-normal" data-i18n="pricing.perMonth"> /month</span>
+                                </h2>
+                                <button class="btn btn-outline-dark w-100 rounded-3 mb-4" data-i18n="pricing.choosePlan">Choose This
+                                    Plan</button>
+                                <ul class="pricing-features list-unstyled small">
+                                    <li><i class="bi bi-check me-2"></i><span data-i18n="pricing.premium.enterprise.features.ssd">200GB
+                                            SSD</span></li>
+                                    <li><i class="bi bi-check me-2"></i><span
+                                            data-i18n="pricing.premium.enterprise.features.bandwidth">Unlimited Bandwidth</span></li>
+                                    <li><i class="bi bi-check me-2"></i><span
+                                            data-i18n="pricing.premium.enterprise.features.support">Dedicated Support</span></li>
+                                    <li><i class="bi bi-check me-2"></i><span
+                                            data-i18n="pricing.premium.enterprise.features.backup">Daily Backup</span></li>
+                                    <li><i class="bi bi-check me-2"></i><span
+                                            data-i18n="pricing.premium.enterprise.features.domain">Free Domain</span></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-                <!-- Business -->
-                <div class="col-md-3">
-                    <div class="pricing-card shadow-sm p-4 rounded-4 h-100 border-danger">
-                        <h5 class="fw-bold mb-3">Business</h5>
-                        <p class="text-muted small">Perfect for growing companies</p>
-                        <h2 class="fw-bold my-3">$15.00<span class="fs-6 fw-normal"> /month</span></h2>
-                        <button class="btn btn-outline-dark w-100 rounded-3 mb-4">Choose This Plan</button>
-                        <ul class="pricing-features list-unstyled small">
-                            <li><i class="bi bi-check me-2"></i>50GB SSD</li>
-                            <li><i class="bi bi-check me-2"></i>Unlimited Bandwidth</li>
-                            <li><i class="bi bi-check me-2"></i>Unlimited Emails</li>
-                            <li><i class="bi bi-check me-2"></i>Free SSL & Backups</li>
-                            <li><i class="bi bi-check me-2"></i>24/7 Support</li>
-                        </ul>
-                    </div>
                 </div>
-
-                <!-- Enterprise -->
-                <div class="col-md-3">
-                    <div class="pricing-card shadow-sm p-4 rounded-4 h-100 border-danger">
-                        <h5 class="fw-bold mb-3">Enterprise</h5>
-                        <p class="text-muted small">Full performance for large-scale businesses</p>
-                        <h2 class="fw-bold my-3">$25.00<span class="fs-6 fw-normal"> /month</span></h2>
-                        <button class="btn btn-outline-dark w-100 rounded-3 mb-4">Choose This Plan</button>
-                        <ul class="pricing-features list-unstyled small">
-                            <li><i class="bi bi-check me-2"></i>200GB SSD</li>
-                            <li><i class="bi bi-check me-2"></i>Unlimited Bandwidth</li>
-                            <li><i class="bi bi-check me-2"></i>Dedicated Support</li>
-                            <li><i class="bi bi-check me-2"></i>Daily Backup</li>
-                            <li><i class="bi bi-check me-2"></i>Free Domain</li>
-                        </ul>
+                </section>
+                
+                <!-- Real Stories Section -->
+                <section class="real-stories py-5 position-relative">
+                    <div class="container position-relative">
+                        <div class="row justify-content-center g-4">
+                            <div class="col-lg-3 d-flex flex-column gap-3">
+                                <div class="title-section position-relative">
+                                    <img src="assets/Quote Mark.svg" alt="Quote Mark" class="quote-bg">
+                                    <h2 class="fw-bold mb-3" data-i18n="stories.title">Real Stories from<br>Real Customers</h2>
+                                    <p class="text-muted" data-i18n="stories.subtitle">Get inspired by these stories.</p>
+                                </div>
+                                <div class="card border-0 shadow-sm p-4 testimonial-card cli-card position-relative flex-grow-1">
+                                    <div class="mb-3">
+                                        <img src="assets/Nigerian-Websites/Crypto-Learn-Invest-bw-oyl3g9g1y9n29md6xkfxpgebbw87gdfbb0h0u1ci68 1.svg"
+                                            alt="CLI Logo">
+                                    </div>
+                                    <div class="quote-text mb-4">
+                                        <div class="quote-mark">“</div>
+                                        <p class="text-muted mb-0" data-i18n="stories.cli.desc">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing elit ut aliquam, purus sit amet luctus venenatis.</p>
+                                    </div>
+                                    <h6 class="fw-bold mb-0" data-i18n="stories.cli.name">Floyd Miles</h6>
+                                    <small class="text-muted" data-i18n="stories.cli.position">Vice President, CLI</small>
+                                </div>
+                            </div>
+                
+                            <div class="col-lg-3 d-flex flex-column gap-3">
+                                <div class="card border-0 shadow-sm p-4 testimonial-card jpnl-card position-relative">
+                                    <div class="mb-3">
+                                        <img src="assets/Nigerian-Websites/Jerry-Piping-bw-oyl3forlrwur6778abi56lm69f24r157w64c9y75z4 1.svg"
+                                            alt="JPNL Logo">
+                                    </div>
+                                    <div class="quote-text">
+                                        <div class="quote-mark">“</div>
+                                        <p class="text-muted mb-0" data-i18n="stories.jpnl.desc">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna,
+                                            porttitor rhoncus dolor purus non enim praesent elementum.</p>
+                                    </div>
+                                    <h6 class="fw-bold mb-0" data-i18n="stories.jpnl.name">Jane Cooper</h6>
+                                    <small class="text-muted" data-i18n="stories.jpnl.position">CEO, JPNL</small>
+                                </div>
+                
+                                <div class="card border-0 shadow-sm p-4 testimonial-card lemon-card position-relative flex-grow-1">
+                                    <div class="mb-3">
+                                        <img src="assets/Nigerian-Websites/LeeveOn-Branding-bw-oyl3fl090kplvrcow9vmwmkbvvknw8qajniecucqo0 1.svg"
+                                            alt="LemonWares Logo">
+                                    </div>
+                                    <div class="quote-text mb-4">
+                                        <div class="quote-mark">“</div>
+                                        <p class="text-muted mb-0" data-i18n="stories.lemon.desc">LemonWares saved our time in hosting
+                                            my company page.</p>
+                                    </div>
+                                    <h6 class="fw-bold mb-0" data-i18n="stories.lemon.name">Kristin Watson</h6>
+                                    <small class="text-muted" data-i18n="stories.lemon.position">Co-Founder, LemonWares</small>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<!-- Real Stories Section -->
-<section class="real-stories py-5 position-relative">
-    <div class="container position-relative">
-
-        <div class="row justify-content-center g-4">
-            <!-- Left Column: Title + CLI -->
-            <div class="col-lg-3 d-flex flex-column gap-3">
-                <!-- Title -->
-                <div class="title-section position-relative">
-                    <img src="assets/Quote Mark.svg" alt="Quote Mark" class="quote-bg">
-                    <h2 class="fw-bold mb-3">Real Stories from<br>Real Customers</h2>
-                    <p class="text-muted">Get inspired by these stories.</p>
-                </div>
-
-                <!-- CLI Card -->
-                <div class="card border-0 shadow-sm p-4 testimonial-card cli-card position-relative flex-grow-1">
-                    <div class="mb-3">
-                        <img src="assets/Nigerian-Websites/Crypto-Learn-Invest-bw-oyl3g9g1y9n29md6xkfxpgebbw87gdfbb0h0u1ci68 1.svg"
-                            alt="CLI Logo">
+                </section>
+                
+                <!-- Contact Section -->
+                <section class="contact-section container">
+                    <div class="overlay">
+                        <h2 data-i18n="contact.title">We're here to make your website awesome.</h2>
+                        <button class="btn-whatsapp">
+                            <img src="assets/contact/whatsapp.svg" alt="whatsapp icon" width="20">
+                            <span data-i18n="contact.button">Get in touch with us</span>
+                        </button>
                     </div>
-                    <div class="quote-text mb-4">
-                        <div class="quote-mark">“</div>
-                        <p class="text-muted mb-0">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus
-                            venenatis.
-                        </p>
+                </section>
+                
+                <!-- Footer -->
+                <footer class="footer text-center text-md-start py-5 border-top">
+                    <div class="container">
+                        <div class="row justify-content-between">
+                            <div class="col-6 col-md-3 mb-4">
+                                <img src="assets/footer/Lemon Wares white Logo 1500px wide 1.svg" alt="logo" width="150">
+                                <p class="small mt-3" data-i18n="footer.about">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                    ut aliquam, purus sit amet luctus venenatis...</p>
+                                <div class="d-flex justify-content-start gap-3 mt-3">
+                                    <img src="assets/footer/Facebook.svg" alt="Facebook" class="social-icon">
+                                    <img src="assets/footer/Insta.svg" alt="Instagram" class="social-icon">
+                                    <img src="assets/footer/X.svg" alt="X platform" class="social-icon">
+                                </div>
+                            </div>
+                
+                            <div class="col-6 col-md-2 mb-3">
+                                <h6 class="fw-bold pb-2" data-i18n="footer.service">Service</h6>
+                                <ul class="list-footer small">
+                                    <li><a href="#" data-i18n="footer.domain">Domain</a></li>
+                                    <li><a href="#" data-i18n="footer.sharedHosting">Shared Hosting</a></li>
+                                    <li><a href="#" data-i18n="footer.cloudHosting">Cloud Hosting</a></li>
+                                    <li><a href="#" data-i18n="footer.privateHosting">Private Hosting</a></li>
+                                </ul>
+                            </div>
+                
+                            <div class="col-6 col-md-2 mb-3">
+                                <h6 class="fw-bold" data-i18n="footer.hosting">Hosting</h6>
+                                <ul class="list-footer small">
+                                    <li><a href="#" data-i18n="footer.cheapHosting">Cheap Hosting</a></li>
+                                    <li><a href="#" data-i18n="footer.wpHosting">Hosting WordPress</a></li>
+                                    <li><a href="#" data-i18n="footer.unlimitedHosting">Hosting Unlimited</a></li>
+                                </ul>
+                            </div>
+                
+                            <div class="col-6 col-md-2 mb-3">
+                                <h6 class="fw-bold pb-2" data-i18n="footer.company">Company</h6>
+                                <ul class="list-footer small">
+                                    <li><a href="#" data-i18n="footer.aboutLink">About</a></li>
+                                    <li><a href="#" data-i18n="footer.career">Career</a></li>
+                                    <li><a href="#" data-i18n="footer.contactUs">Contact Us</a></li>
+                                </ul>
+                            </div>
+                
+                            <div class="col-6 col-md-2 mb-3">
+                                <h6 class="fw-bold pb-2" data-i18n="footer.help">Help</h6>
+                                <ul class="list-footer small">
+                                    <li><a href="#" data-i18n="footer.faq">FAQ</a></li>
+                                    <li><a href="#" data-i18n="footer.support">Help Support</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                
+                        <div class="text-center mt-5 small">
+                            <p class="mb-0" data-i18n="footer.copyright">&copy; 2025 Lemon Wares. All rights reserved.</p>
+                        </div>
                     </div>
-                    <h6 class="fw-bold mb-0">Floyd Miles</h6>
-                    <small class="text-muted">Vice President, CLI</small>
-                </div>
-            </div>
-
-            <!-- Right Column: JPNL , LemonWares -->
-            <div class="col-lg-3 d-flex flex-column gap-3">
-                <!-- JPNL Card -->
-                <div class="card border-0 shadow-sm p-4 testimonial-card jpnl-card position-relative">
-                    <div class="mb-3">
-                        <img src="assets/Nigerian-Websites/Jerry-Piping-bw-oyl3forlrwur6778abi56lm69f24r157w64c9y75z4 1.svg"
-                            alt="JPNL Logo">
-                    </div>
-                    <div class="quote-text">
-                        <div class="quote-mark">“</div>
-                        <p class="text-muted mb-0">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus
-                            venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent
-                            elementum.
-                        </p>
-                    </div>
-                    <h6 class="fw-bold mb-0">Jane Cooper</h6>
-                    <small class="text-muted">CEO, JPNL</small>
-                </div>
-
-                <!-- LemonWares Card -->
-                <div class="card border-0 shadow-sm p-4 testimonial-card lemon-card position-relative flex-grow-1">
-                    <div class="mb-3">
-                        <img src="assets/Nigerian-Websites/LeeveOn-Branding-bw-oyl3fl090kplvrcow9vmwmkbvvknw8qajniecucqo0 1.svg"
-                            alt="LemonWares Logo">
-                    </div>
-                    <div class="quote-text mb-4">
-                        <div class="quote-mark">“</div>
-                        <p class="text-muted mb-0">
-                            LemonWares saved our time in hosting my company page.
-                        </p>
-                    </div>
-                    <h6 class="fw-bold mb-0">Kristin Watson</h6>
-                    <small class="text-muted">Co-Founder, LemonWares</small>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-    <!-- Nigerian Websites -->
-    <section class="cloud-section py-5 container">
-        <div class="row justify-content-between">
-            <div class="col-md-4">
-                <h2 class="fw-bold">We serve over 100 Nigerian Websites</h2>
-                <p>Connect LemonWares with your favorite tools that you use daily and keep things on track.</p>
-            </div>
-        <div class="col-md-6">
-            <div class="nigerian-company row justify-content-between">
-                <div class=" col-6 col-md-3 mb-3"><img
-                        src="assets/Nigerian-Websites/Jerry-Piping-bw-oyl3forlrwur6778abi56lm69f24r157w64c9y75z4 1.svg"
-                        alt="Jerry-Piping" class="img-fluid"></div>
-                <div class="col-6 col-md-3 mb-3"><img
-                        src="assets/Nigerian-Websites/Korane-Scents-bw-oyl3fj4kmwn18jff792drn1ep3txguitve7feafj0g 1.svg"
-                        alt="Korane-Scents" class="img-fluid"></div>
-                <div class="col-6 col-md-3 mb-3"><img
-                        src="assets/Nigerian-Websites/Nadine-Ghaida-bw-oyl3fly37eqw7dbbqsa9h4bsh9g13xu0vs5vu4bchs 1.svg"
-                        alt="Nadine-Ghaida" class="img-fluid"></div>
-            </div>
-            <div class=" nigerian-company row justify-content-between mt-4">
-                <div class="col-6 col-md-3 mb-3"><img
-                        src="assets/Nigerian-Websites/LeeveOn-Branding-bw-oyl3fl090kplvrcow9vmwmkbvvknw8qajniecucqo0 1.svg"
-                        alt="LeeveOn-Branding-" class="img-fluid"></div>
-                <div class="col-6 col-md-3 mb-3"><img
-                        src="assets/Nigerian-Websites/Jrango-Glasses-bw-oyl3fi6qg2lqwxgscqnr759y3pyk95f3j9jxx0gx6o 1.svg"
-                        alt="Jrango-Glasses" class="img-fluid"></div>
-                <div class="col-6 col-md-3 mb-3"><img
-                        src="assets/Nigerian-Websites/Crypto-Learn-Invest-bw-oyl3g9g1y9n29md6xkfxpgebbw87gdfbb0h0u1ci68 1.svg"
-                        alt="Crypto-Learn" class="img-fluid"></div>
-            </div>
-        </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact-section container">
-        <div class="overlay">
-            <h2>We're here to make your website awesome.</h2>
-            <button class="btn-whatsapp">
-                <img src="assets/contact/whatsapp.svg" alt="whatsapp icon" width="20">
-                Get in touch with us
-            </button>
-        </div>
-    </section>
-
-<!-- Footer -->
-<footer class="footer text-center text-md-start py-5 border-top">
-    <div class="container">
-        <div class="row justify-content-between">
-
-            <!-- Logo + About -->
-            <div class="col-6 col-md-3 mb-4">
-                <img src="assets/footer/Lemon Wares white Logo 1500px wide 1.svg" alt="logo" width="150">
-                <p class="small mt-3">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus
-                    venenatis...
-                </p>
-
-                <!-- Social Icons Row -->
-                <div class="d-flex justify-content-start gap-3 mt-3">
-                    <img src="assets/footer/Facebook.svg" alt="Facebook" class="social-icon">
-                    <img src="assets/footer/Insta.svg" alt="Instagram" class="social-icon">
-                    <img src="assets/footer/X.svg" alt="X platform" class="social-icon">
-                </div>
-            </div>
-
-            <!-- Service -->
-            <div class="col-6 col-md-2 mb-3">
-                <h6 class="fw-bold pb-2">Service</h6>
-                <ul class="list-footer small">
-                    <li><a href="#">Domain</a></li>
-                    <li><a href="#">Shared Hosting</a></li>
-                    <li><a href="#">Cloud Hosting</a></li>
-                    <li><a href="#">Private Hosting</a></li>
-                </ul>
-            </div>
-
-            <!-- Hosting -->
-            <div class="col-6 col-md-2 mb-3">
-                <h6 class="fw-bold">Hosting</h6>
-                <ul class="list-footer small">
-                    <li><a href="#">Cheap Hosting</a></li>
-                    <li><a href="#">Hosting WordPress</a></li>
-                    <li><a href="#">Hosting Unlimited</a></li>
-                </ul>
-            </div>
-
-            <!-- Company -->
-            <div class="col-6 col-md-2 mb-3">
-                <h6 class="fw-bold pb-2">Company</h6>
-                <ul class="list-footer small">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Career</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            </div>
-
-            <!-- Help -->
-            <div class="col-6 col-md-2 mb-3">
-                <h6 class="fw-bold pb-2">Help</h6>
-                <ul class="list-footer small">
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Help Support</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <p class="mt-4 small">Copyrights 2025, All rights reserved</p>
-    </div>
-</footer>
+                </footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
@@ -556,10 +520,12 @@
 
         <!-- Swiper JS -->
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <script src="script.js"></script>
 
 
+<script src="script.js"> </script>
 
+
+      
 </body>
 
 </html>
