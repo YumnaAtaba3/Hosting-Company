@@ -91,6 +91,13 @@
     
     
         @media (max-width: 768px) {
+            .feature-next,
+                .feature-prev {
+                    width: 35px;
+                    height: 35px;
+                    font-size: 14px;
+                    top: 40%;
+                }
             .feature-next {
                 right: 5px;
             }

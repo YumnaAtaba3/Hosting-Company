@@ -29,6 +29,7 @@ function translatePage(lang) {
   localStorage.setItem("lang", lang);
 
   initHeroSwiper();
+  initFeatureSwiper();
 }
 
 // Initialize Hero Swiper
@@ -54,25 +55,35 @@ function initHeroSwiper() {
 }
 
 // Initialize Features Swiper
-function initFeatureSwiper() {
-  new Swiper(".featureSwiper", {
-    slidesPerView: 4,
+let featureSwiper;
 
+function initFeatureSwiper() {
+  const isRTL = document.documentElement.getAttribute("dir") === "rtl";
+
+  // Destroy existing swiper before creating a new one
+  if (featureSwiper) {
+    featureSwiper.destroy(true, true);
+  }
+
+  featureSwiper = new Swiper(".featureSwiper", {
+    slidesPerView: 4,
     spaceBetween: 30,
     loop: true,
-    navigation: {
-      nextEl: ".feature-next",
-      prevEl: ".feature-prev",
-    },
     autoplay: {
       delay: 3500,
       disableOnInteraction: false,
     },
-    breakpoints: {
-      992: { slidesPerView: 4 },
-      768: { slidesPerView: 2 },
-      0: { slidesPerView: 1 },
+    navigation: {
+      nextEl: ".feature-next",
+      prevEl: ".feature-prev",
     },
+    breakpoints: {
+      1200: { slidesPerView: 4, spaceBetween: 30 },
+      992: { slidesPerView: 3, spaceBetween: 25 },
+      768: { slidesPerView: 2, spaceBetween: 20 },
+      0: { slidesPerView: 1, spaceBetween: 10 },
+    },
+    rtl: isRTL,
   });
 }
 
